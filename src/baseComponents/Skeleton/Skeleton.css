@@ -1,0 +1,8 @@
+.Skeletons>span{
+  width: 300px;
+  margin-bottom: 100px;
+ 
+}
+.Skeletons>span>span{
+  margin-bottom: 10px;
+}

@@ -1,0 +1,8 @@
+.Header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid rgb(94, 113, 131);
+  border-radius: 5px;
+  background-color: rgb(187, 209, 226);
+}

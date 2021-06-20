@@ -1,0 +1,21 @@
+.Board {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  overflow-x: auto;
+}
+.container{
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.container>div{
+  flex: 1 0 400px;
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  background-color: rgb(235, 230, 230);
+}
