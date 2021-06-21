@@ -1,16 +1,16 @@
 .Search > input {
   width: 250px;
-  outline: none;
-  border: 1px solid white;
   padding: 5px 10px;
-  border-radius: 5px;
   margin-right: 20px;
+  border: 1px solid rgb(255, 254, 254);
+  border-radius: 5px;
+  outline: none;
 }
 .Search > button {
   padding: 5px 10px;
-  background-color: white;  
   border: none;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);  
   color: rgb(13, 90, 90);
   transition: 0.1s;
 }

@@ -6,16 +6,20 @@ import Card from './Card/Card';
 import './Board.css';
 
 const Board = () => {
-  const [readyForRealize = [], inProgress = [], submitted = []] = useSelector(selectCourses)
-  const counts = useSelector(selectCountCourses)
+  const [readyForRealize = [], inProgress = [], submitted = []] = useSelector(selectCourses);
+  const counts = useSelector(selectCountCourses);
   const loading = useSelector(selectLoading);
-  const spinner = (counts.map((count, index) => <div key={`${index}`}>{Array(count).fill(<Skeletons />)}</div>))
+  
+  const spinner = (
+    counts.map((count, index) => 
+    <div key={`${index}`}>{Array(count).fill(<Skeletons/>)
+      .map((elem, index) => <div key={index}>{elem}</div>)}</div>))
 
   if(loading) {
     return (
-    <div className='Board'>
-      <div className='container'>{spinner}</div>
-    </div>
+      <div className='Board'>
+        <div className='container'>{spinner}</div>
+      </div>
     )  
   }
 
