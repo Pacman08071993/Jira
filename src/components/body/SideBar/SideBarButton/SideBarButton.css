@@ -1,0 +1,23 @@
+.SideBarButton{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  z-index: 10;
+  cursor: pointer;
+}
+.SideBarButton>div{
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background-color: white;
+}
+.SideBarButton>div:first-child{
+  transform: rotate(45deg);
+}
+.SideBarButton>div:last-child{
+  transform: rotate(-45deg);
+}

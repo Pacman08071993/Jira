@@ -1,8 +1,7 @@
 import {React, useState} from "react";
 import { useDispatch } from 'react-redux';
 import { getSearchDataResult } from '../../../state/actions/actions';
-
-
+import './Search.css';
 
 const Search = () => {
   const dispatch = useDispatch()
@@ -23,9 +22,10 @@ const Search = () => {
   }
 
   return(
-    <div >
+    <div className='Search'>
       <input
         type='text'
+        placeholder='search'
         onKeyPress={handleSearchDataOnKeyPress}
         onChange={handleSearchOnChange}
       />

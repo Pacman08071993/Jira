@@ -14,8 +14,11 @@
   bottom: 0;
 }
 .container>div{
-  flex: 1 0 400px;
-  padding: 10px 30px;
+  flex: 1 0 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 50px;
   border: 1px solid #ccc;
-  background-color: rgb(235, 230, 230);
+  background-color: rgb(174, 200, 211);
+  overflow-y: auto;
 }
